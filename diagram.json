@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 585.9000000002281,
+      "left": 364.560000000228,
+      "attrs": { "color": "blue", "bounce": "0", "label": "Start/Stop" }
+    },
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno1",
+      "top": 670.9200000003422,
+      "left": 78.770000000342,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 457.570000000228,
+      "left": 61.240000000228,
+      "attrs": { "background": "blue", "color": "white" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 610.8000000005702,
+      "left": 246.13000000056996,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 740.4000000002281,
+      "left": -97.91999999977202,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 674.5300000002281,
+      "left": -33.749999999772,
+      "attrs": { "color": "yellow", "label": "Movement", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 517.790000000228,
+      "left": 16.270000000228,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "uno1:GND.1", "lcd1:VSS", "black", [ "v-50.23", "h-101.03" ] ],
+    [ "uno1:GND.1", "lcd1:K", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno1:GND.1", "lcd1:RW", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno1:5V", "lcd1:VDD", "red", [ "v16", "h-16" ] ],
+    [ "uno1:5V", "r1:2", "red", [ "v16", "h-136.29", "v-240.71", "h217.78", "v-22.4" ] ],
+    [ "r1:1", "lcd1:A", "pink", [] ],
+    [ "uno1:12", "lcd1:RS", "blue", [ "v-16", "*", "h0", "v20" ] ],
+    [ "uno1:11", "lcd1:E", "purple", [ "v-20", "*", "h0", "v20" ] ],
+    [ "uno1:10", "lcd1:D4", "limegreen", [ "v-24", "*", "h0", "v20" ] ],
+    [ "uno1:9", "lcd1:D5", "brown", [ "v-28", "*", "h0", "v20" ] ],
+    [ "uno1:8", "lcd1:D6", "gold", [ "v-32", "*", "h0", "v20" ] ],
+    [ "uno1:7", "lcd1:D7", "gray", [ "v-36", "*", "h0", "v20" ] ],
+    [ "btn1:2.r", "uno1:2", "blue", [ "h16.49", "v131.31", "h-131.96" ] ],
+    [ "btn1:1.l", "uno1:GND.1", "black", [ "h-25.42", "v30.79", "h-144.05" ] ],
+    [ "ldr1:VCC", "uno1:5V", "red", [ "h45.14", "v123.39", "h208.81" ] ],
+    [ "ldr1:GND", "uno1:GND.1", "black", [ "h25.84", "v-136.21", "h134.71" ] ],
+    [ "uno1:3", "btn2:1.r", "yellow", [ "v56.88", "h-262.12", "v-53.28" ] ],
+    [ "btn2:2.l", "uno1:GND.1", "black", [ "h-12.64", "v-77.21", "h240.66" ] ],
+    [ "ldr1:AO", "uno1:A0", "orange", [ "h110.37", "v99.42", "h106.88" ] ],
+    [ "led1:A", "uno1:5", "gray", [ "v45.32", "h12.47" ] ],
+    [ "led1:C", "uno1:GND.1", "black", [ "v69.51", "h223.31" ] ],
+    [ "lcd1:V0", "uno1:5", "magenta", [ "v11.64", "h174.03" ] ]
+  ],
+  "dependencies": {}
+}
