@@ -1,6 +1,6 @@
 # arduino.speedometer
 I realized for the computer architecture exam e fully functonal arduino speedometer.
-I made the whole project in italian for bc my university is fully italian.
+I made the whole project in italian bc my university is fully italian.
 
 I simulated the application on Wokwi, in the .pdf there's the completely explaination of the project.
 
