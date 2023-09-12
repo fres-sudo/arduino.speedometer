@@ -8,7 +8,7 @@ The assignment was to avoid using the base library arduino function, using timer
 
 If you want more info about the project please contact me on:
 
-IG: @aka_fres
+IG: @aka_fres /or/
 email: francescocalicchio@hotmail.com
 
 
