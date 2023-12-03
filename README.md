@@ -18,6 +18,20 @@ Overview of the project
 
 ![Preview](overview_and_wiring.png)
 
+Functioning
+
+![Functioning](functioning.png)
+
+## Flow Chart
+
+![FlowChart](overall_flow_chart.jpg)
+
+## State Chart
+
+![StateChart](statechart.jpg)
+
+## Contact Me
+
 If you want more info about the project please contact me on:
 
 IG: @aka_fres /or/
