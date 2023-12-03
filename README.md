@@ -14,7 +14,9 @@ The assignment was to create a modular system capable of functioning entirely th
 
 ## Preview
 
+Overview of the project
 
+![Preview](overview_and_wiring.png)
 
 If you want more info about the project please contact me on:
 
