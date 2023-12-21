@@ -1,6 +1,5 @@
 # Arduino Speedometer 🚵
-I realized for the computer architecture exam e fully functonal arduino speedometer.
-I made the whole project in italian because my university is fully italian.
+Fully functonal and optimized arduino speedometer.
 
 ## Simulation
 
@@ -8,9 +7,9 @@ The project was entirely simulated on Wokwi as I didn't have a physical Arduino 
 
 The system can be easily replicated in real life, all that is needed is a sensor capable of scanning with a duality of states (HIGH-LOW) for one revolution of the wheel.
 
-## Assignment
+## Optimization
 
-The assignment was to create a modular system capable of functioning entirely through interrupts. Moreover, it was not possible to use the standard functions of the Arduino library; the functions were written in C, and some in assembly. Bit shifting was employed to set pins to high or low, while timer interrupts were used for timing, and external interrupts for the sensors.
+A modular system has been devised to function exclusively through interrupts, devoid of reliance on standard Arduino library functions. The implementation involved crafting functions in C and assembly. Pin state manipulation was achieved through bit shifting, enabling the setting of pins to high or low. The system utilized timer interrupts for precise timing and external interrupts for sensor-related tasks. This approach required a departure from the conventional use of Arduino functions, necessitating a low-level coding strategy.
 
 ## Preview
 
